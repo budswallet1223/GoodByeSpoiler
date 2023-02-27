@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "스포일러 제거기",
+    "description": "블루 아카이브 마이너 갤러리의 스포일러를 제거하는 프로그램입니다.",
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": ["scripting"],
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": ["*://*.gall.dcinside.com/*"]
+        }
+    ]
+}
